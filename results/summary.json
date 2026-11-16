@@ -1,0 +1,172 @@
+[
+  {
+    "retriever": "bm25",
+    "run": {
+      "retriever": "bm25",
+      "seed": 42,
+      "top_k": 5,
+      "n_splits": 5,
+      "negation_cues": "generic",
+      "n_components": 16
+    },
+    "accuracy": 0.5064935064935064,
+    "accuracy_ci95": [
+      0.38961038961038963,
+      0.6233766233766234
+    ],
+    "accuracy_strict": 0.42857142857142855,
+    "accuracy_by_type": {
+      "extractive": {
+        "accuracy": 0.3333333333333333,
+        "n": 27
+      },
+      "unanswerable": {
+        "accuracy": 0.8125,
+        "n": 16
+      },
+      "yes_no": {
+        "accuracy": 0.5,
+        "n": 34
+      }
+    },
+    "accuracy_by_type_strict": {
+      "extractive": {
+        "accuracy": 0.1111111111111111,
+        "n": 27
+      },
+      "unanswerable": {
+        "accuracy": 0.8125,
+        "n": 16
+      },
+      "yes_no": {
+        "accuracy": 0.5,
+        "n": 34
+      }
+    },
+    "ece": 0.16738134388635087,
+    "brier": 0.27229324288319623,
+    "hallucination": {
+      "rate": 0.1875,
+      "count": "3/16",
+      "ci95": [
+        0.0,
+        0.375
+      ]
+    },
+    "false_abstention": {
+      "rate": 0.19672131147540983,
+      "count": "12/61",
+      "ci95": [
+        0.09836065573770492,
+        0.29508196721311475
+      ]
+    },
+    "evidence_grounding": {
+      "rate": 1.0,
+      "count": "49/49",
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "retrieval": {
+      "recall@1": 0.9836065573770492,
+      "recall@3": 0.9836065573770492,
+      "recall@5": 0.9836065573770492,
+      "mrr": 0.9836065573770492,
+      "n_queries": 61
+    },
+    "efficiency": {
+      "build_time_s": 0.0025406550000184325,
+      "mean_latency_ms": 0.10979733333511611,
+      "p95_latency_ms": 0.15643700001533034,
+      "approx_memory_kb": 473.0380859375,
+      "n_queries_timed": 231
+    }
+  },
+  {
+    "retriever": "tfidf_lsa",
+    "run": {
+      "retriever": "tfidf_lsa",
+      "seed": 42,
+      "top_k": 5,
+      "n_splits": 5,
+      "negation_cues": "generic",
+      "n_components": 16
+    },
+    "accuracy": 0.4935064935064935,
+    "accuracy_ci95": [
+      0.38928571428571435,
+      0.6103896103896104
+    ],
+    "accuracy_strict": 0.42857142857142855,
+    "accuracy_by_type": {
+      "extractive": {
+        "accuracy": 0.25925925925925924,
+        "n": 27
+      },
+      "unanswerable": {
+        "accuracy": 0.6875,
+        "n": 16
+      },
+      "yes_no": {
+        "accuracy": 0.5882352941176471,
+        "n": 34
+      }
+    },
+    "accuracy_by_type_strict": {
+      "extractive": {
+        "accuracy": 0.07407407407407407,
+        "n": 27
+      },
+      "unanswerable": {
+        "accuracy": 0.6875,
+        "n": 16
+      },
+      "yes_no": {
+        "accuracy": 0.5882352941176471,
+        "n": 34
+      }
+    },
+    "ece": 0.16332185260122647,
+    "brier": 0.2807568380376093,
+    "hallucination": {
+      "rate": 0.3125,
+      "count": "5/16",
+      "ci95": [
+        0.125,
+        0.5625
+      ]
+    },
+    "false_abstention": {
+      "rate": 0.2786885245901639,
+      "count": "17/61",
+      "ci95": [
+        0.17991803278688528,
+        0.39344262295081966
+      ]
+    },
+    "evidence_grounding": {
+      "rate": 0.9090909090909091,
+      "count": "40/44",
+      "ci95": [
+        0.8181818181818182,
+        0.9772727272727273
+      ]
+    },
+    "retrieval": {
+      "recall@1": 0.8688524590163934,
+      "recall@3": 0.9672131147540983,
+      "recall@5": 0.9836065573770492,
+      "mrr": 0.9193989071038252,
+      "n_queries": 61
+    },
+    "efficiency": {
+      "build_time_s": 0.023357734000001074,
+      "mean_latency_ms": 0.841318428572755,
+      "p95_latency_ms": 1.031585500015808,
+      "approx_memory_kb": 197.625,
+      "n_queries_timed": 231
+    }
+  }
+]

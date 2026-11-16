@@ -1,0 +1,25 @@
+# Settings used to produce results/report.md. train.py and evaluate.py read
+# this file (--config) and any CLI flag overrides the corresponding key.
+
+retriever: bm25          # or: tfidf_lsa  (train.py --retriever overrides)
+seed: 42
+top_k: 5                 # evidence passages retrieved per question
+n_splits: 5              # stratified CV folds for the cascaded classifier
+ece_bins: 10             # bins used for Expected Calibration Error
+
+# Which negation-cue list the has_negation feature uses:
+#   generic -- domain-agnostic list, written without looking at the benchmark (default)
+#   tuned   -- the original benchmark-tuned list; ablation arm only
+negation_cues: generic
+
+tfidf_lsa:
+  n_components: 16       # truncated-SVD latent dimensionality
+
+robustness:
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]   # CV fold-split seeds for the stability sweep
+  perturbation_rates: [0.1, 0.2, 0.3]     # fraction of query tokens dropped / corrupted
+  n_perturbations: 20                     # random perturbations per query per rate
+
+data:
+  corpus: data/corpus.json
+  qa_benchmark: data/qa_benchmark.json

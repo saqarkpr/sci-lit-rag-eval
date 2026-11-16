@@ -1,0 +1,31 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  test-and-reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - run: pytest -q
+      - name: Reproduce results and check metrics are unchanged
+        run: |
+          bash scripts/train.sh > /dev/null
+          # timings and plots are machine-dependent; metrics must match exactly
+          git diff --exit-code -- results/retrieval_metrics_bm25.json results/retrieval_metrics_tfidf_lsa.json
+          python - <<'PY'
+          import json, subprocess
+          cur = json.load(open("results/summary.json"))
+          old = json.loads(subprocess.check_output(["git", "show", "HEAD:results/summary.json"]))
+          for a, b in zip(cur, old):
+              for k in ("accuracy", "ece", "brier"):
+                  assert abs(a[k] - b[k]) < 1e-9, (a["retriever"], k, a[k], b[k])
+              for k in ("hallucination", "false_abstention", "evidence_grounding"):
+                  assert a[k]["count"] == b[k]["count"], (a["retriever"], k)
+          print("metrics reproduced")
+          PY

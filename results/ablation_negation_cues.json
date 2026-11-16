@@ -1,0 +1,34 @@
+{
+  "generic": {
+    "bm25": {
+      "accuracy": 0.5064935064935064,
+      "yes_no_accuracy": 0.5,
+      "hallucination_rate": 0.1875,
+      "false_abstention_rate": 0.19672131147540983,
+      "ece": 0.16738134388635087
+    },
+    "tfidf_lsa": {
+      "accuracy": 0.4935064935064935,
+      "yes_no_accuracy": 0.5882352941176471,
+      "hallucination_rate": 0.3125,
+      "false_abstention_rate": 0.2786885245901639,
+      "ece": 0.16332185260122647
+    }
+  },
+  "tuned": {
+    "bm25": {
+      "accuracy": 0.5714285714285714,
+      "yes_no_accuracy": 0.5882352941176471,
+      "hallucination_rate": 0.125,
+      "false_abstention_rate": 0.18032786885245902,
+      "ece": 0.17328440700098025
+    },
+    "tfidf_lsa": {
+      "accuracy": 0.4935064935064935,
+      "yes_no_accuracy": 0.6176470588235294,
+      "hallucination_rate": 0.3125,
+      "false_abstention_rate": 0.29508196721311475,
+      "ece": 0.1623514045783428
+    }
+  }
+}

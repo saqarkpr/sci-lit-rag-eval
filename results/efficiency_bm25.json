@@ -1,0 +1,15 @@
+{
+  "run": {
+    "retriever": "bm25",
+    "seed": 42,
+    "top_k": 5,
+    "n_splits": 5,
+    "negation_cues": "generic",
+    "n_components": 16
+  },
+  "build_time_s": 0.0025406550000184325,
+  "mean_latency_ms": 0.10979733333511611,
+  "p95_latency_ms": 0.15643700001533034,
+  "approx_memory_kb": 473.0380859375,
+  "n_queries_timed": 231
+}

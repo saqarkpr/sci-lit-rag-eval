@@ -1,0 +1,212 @@
+{
+  "n_probed": 34,
+  "n_flipped_on_negation": 12,
+  "negation_flip_rate": 0.35294117647058826,
+  "per_item": [
+    {
+      "qid": "q001",
+      "p_yes_original": 0.8445808298525169,
+      "p_yes_negated": 0.5562106972380693,
+      "flipped": false
+    },
+    {
+      "qid": "q002",
+      "p_yes_original": 0.356622151835134,
+      "p_yes_negated": 0.1134689835890964,
+      "flipped": false
+    },
+    {
+      "qid": "q003",
+      "p_yes_original": 0.49952055209776053,
+      "p_yes_negated": 0.18711862693980175,
+      "flipped": false
+    },
+    {
+      "qid": "q004",
+      "p_yes_original": 0.5147814651346456,
+      "p_yes_negated": 0.19675142797060577,
+      "flipped": true
+    },
+    {
+      "qid": "q005",
+      "p_yes_original": 0.49482648779024785,
+      "p_yes_negated": 0.18427893024102543,
+      "flipped": false
+    },
+    {
+      "qid": "q006",
+      "p_yes_original": 0.6779409881104398,
+      "p_yes_negated": 0.3268169389056398,
+      "flipped": true
+    },
+    {
+      "qid": "q007",
+      "p_yes_original": 0.39121146463860307,
+      "p_yes_negated": 0.30997475002063646,
+      "flipped": false
+    },
+    {
+      "qid": "q008",
+      "p_yes_original": 0.7980305418553606,
+      "p_yes_negated": 0.4290263463222832,
+      "flipped": true
+    },
+    {
+      "qid": "q009",
+      "p_yes_original": 0.35369211861542843,
+      "p_yes_negated": 0.11197445646971975,
+      "flipped": false
+    },
+    {
+      "qid": "q010",
+      "p_yes_original": 0.8575899773730085,
+      "p_yes_negated": 0.568939943254561,
+      "flipped": false
+    },
+    {
+      "qid": "q011",
+      "p_yes_original": 0.009121949746772955,
+      "p_yes_negated": 0.006383506615121986,
+      "flipped": false
+    },
+    {
+      "qid": "q012",
+      "p_yes_original": 0.054552913671209916,
+      "p_yes_negated": 0.012718584422580812,
+      "flipped": false
+    },
+    {
+      "qid": "q013",
+      "p_yes_original": 0.2693772666080713,
+      "p_yes_negated": 0.20464158960639733,
+      "flipped": false
+    },
+    {
+      "qid": "q014",
+      "p_yes_original": 0.7472124205703057,
+      "p_yes_negated": 0.40537187549900056,
+      "flipped": true
+    },
+    {
+      "qid": "q015",
+      "p_yes_original": 0.6323301988950147,
+      "p_yes_negated": 0.27595451974836094,
+      "flipped": true
+    },
+    {
+      "qid": "q016",
+      "p_yes_original": 0.5864485725932429,
+      "p_yes_negated": 0.24654557041342265,
+      "flipped": true
+    },
+    {
+      "qid": "q017",
+      "p_yes_original": 0.5924626871341493,
+      "p_yes_negated": 0.3574345643673901,
+      "flipped": true
+    },
+    {
+      "qid": "q018",
+      "p_yes_original": 0.8972771135796545,
+      "p_yes_negated": 0.5558444248313514,
+      "flipped": false
+    },
+    {
+      "qid": "q019",
+      "p_yes_original": 0.45945818507326425,
+      "p_yes_negated": 0.13715805692519062,
+      "flipped": false
+    },
+    {
+      "qid": "q020",
+      "p_yes_original": 0.962474010635167,
+      "p_yes_negated": 0.8554039115700408,
+      "flipped": false
+    },
+    {
+      "qid": "q021",
+      "p_yes_original": 0.45501350675584407,
+      "p_yes_negated": 0.16165718919795047,
+      "flipped": false
+    },
+    {
+      "qid": "q022",
+      "p_yes_original": 0.5884834416806539,
+      "p_yes_negated": 0.24501438413111284,
+      "flipped": true
+    },
+    {
+      "qid": "q023",
+      "p_yes_original": 0.5761010947633195,
+      "p_yes_negated": 0.23864267840481268,
+      "flipped": true
+    },
+    {
+      "qid": "q024",
+      "p_yes_original": 0.38413149828460214,
+      "p_yes_negated": 0.12597924292378876,
+      "flipped": false
+    },
+    {
+      "qid": "q025",
+      "p_yes_original": 0.4733273692546697,
+      "p_yes_negated": 0.17168908531698332,
+      "flipped": false
+    },
+    {
+      "qid": "q026",
+      "p_yes_original": 0.10841222811757506,
+      "p_yes_negated": 0.0782226033459569,
+      "flipped": false
+    },
+    {
+      "qid": "q027",
+      "p_yes_original": 0.017018451950122023,
+      "p_yes_negated": 0.011937782341377913,
+      "flipped": false
+    },
+    {
+      "qid": "q028",
+      "p_yes_original": 0.3294184809069651,
+      "p_yes_negated": 0.1018557076397843,
+      "flipped": false
+    },
+    {
+      "qid": "q029",
+      "p_yes_original": 0.8039378956498818,
+      "p_yes_negated": 0.4860387603282837,
+      "flipped": true
+    },
+    {
+      "qid": "q030",
+      "p_yes_original": 0.07251747539185499,
+      "p_yes_negated": 0.05173983999311122,
+      "flipped": false
+    },
+    {
+      "qid": "q031",
+      "p_yes_original": 0.20260755375109268,
+      "p_yes_negated": 0.14566551774854833,
+      "flipped": false
+    },
+    {
+      "qid": "q032",
+      "p_yes_original": 0.5953467441757428,
+      "p_yes_negated": 0.2533994338195432,
+      "flipped": true
+    },
+    {
+      "qid": "q033",
+      "p_yes_original": 0.6327483036600289,
+      "p_yes_negated": 0.2848968909863027,
+      "flipped": true
+    },
+    {
+      "qid": "q034",
+      "p_yes_original": 0.1677043185890609,
+      "p_yes_negated": 0.1235326820280023,
+      "flipped": false
+    }
+  ],
+  "note": "Diagnostic probe: the yes/no classifier is trained on all 34 yes/no items (not held out) and then asked the polarity-negated version of each question. A logically sound classifier should flip on (nearly) every item, since negating the question negates the correct answer; a low flip rate means it is tracking surface lexical cues rather than semantic polarity."
+}

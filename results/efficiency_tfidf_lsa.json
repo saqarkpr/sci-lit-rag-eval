@@ -1,0 +1,15 @@
+{
+  "run": {
+    "retriever": "tfidf_lsa",
+    "seed": 42,
+    "top_k": 5,
+    "n_splits": 5,
+    "negation_cues": "generic",
+    "n_components": 16
+  },
+  "build_time_s": 0.023357734000001074,
+  "mean_latency_ms": 0.841318428572755,
+  "p95_latency_ms": 1.031585500015808,
+  "approx_memory_kb": 197.625,
+  "n_queries_timed": 231
+}
